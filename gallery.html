@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-migrate-1.1.1.js"></script>
+<script src="js/superfish.js"></script>
+<script src="js/sForm.js"></script>
+<script src="js/jquery.equalheights.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="js/layout.css" type="text/css" />
+<link rel="stylesheet" href="css/superfish.css">
+<!--<link rel="stylesheet" href="css/grid.css">-->
+<link rel="stylesheet" href="css/reset.css">
+<!--<!--<link rel="stylesheet" href="css/style.css">-->
+<link rel="stylesheet" href="css/ie.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- prettyPhoto -->
+<link rel="stylesheet" href="images/prettyphoto/prettyPhoto.css" type="text/css" />
+<script type="text/javascript" src="images/prettyphoto/jquery.prettyPhoto.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("a[rel^='prettyPhoto']").prettyPhoto({
+        theme: 'dark_rounded',
+        overlay_gallery: false,
+        social_tools: false
+    });
+});
+</script>
+<style type="text/css">
+
+
+
+html {
+	width: 100%;
+}
+
+ a[href^="tel:"] {
+color: inherit;
+text-decoration:none;
+}
+
+* {
+	-webkit-text-size-adjust: none;
+}
+
+
+body {
+	font: 14px/18px  Arial, Helvetica, sans-serif;
+	color:#666565;
+	position:relative;
+	min-width: 1200px;
+	background:  #6b8403;
+
+}
+
+.ic {
+	border:0;
+	float:right;
+	background:#fff;
+	color:#f00;
+	width:50%;
+	line-height:10px;
+	font-size:10px;
+	margin:-220% 0 0 0;
+	overflow:hidden;
+	padding:0
+}
+
+
+h1, h2, h2, h4, h5, h6 {
+	font-weight: normal;
+	font-family: 'Headland One', serif;
+	color:#151212;;
+}
+
+h2 {
+	font-size: 40px;
+	line-height: 18px;
+	padding-top: 30px;
+	letter-spacing: 1px;
+	color: #fff;
+	text-align: center;
+	font-size: 'Donegal One', serif;
+}
+
+
+
+p {
+	margin-bottom: 18px;
+}
+
+p.p1 {
+	margin-bottom: 28px;
+}
+
+p.p2 {
+	margin-bottom: 26px;
+}
+
+p.p3 {
+	margin-bottom: 6px;
+}
+
+img {
+	max-width: 100%;
+}
+
+address {
+	font-style: normal;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+ul.list li{
+	background: url(../images/marker.png) 0 3px no-repeat;
+	color: #000;
+	margin-bottom: 18px;
+	padding-left: 32px;
+}
+/*links*/
+
+a {
+	text-decoration: none;
+	color: inherit;
+	outline: none;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+
+a:hover {
+	/*color: #e3e83a;*/
+	
+}
+
+
+a.btn {
+	background: url(../images/btn_bg.png) 0 0 repeat-x #84a60d;
+	display: inline-block;
+	padding: 7px 48px 7px 40px;
+	color: #fff;
+	margin-top: 32px;
+	border-bottom: 1px solid #84a60d ;
+}
+
+a.btn:hover {
+	background: #656464;
+	color: #fff !important;
+	border-bottom-color: #515050;
+}
+/*preclass*/
+
+.mb0 {
+	margin-bottom: 0px !important;
+}
+.m0 {
+	margin: 0 !important;
+}
+
+.ind1 {
+	margin-top: 11px;
+}
+
+.pad0 {
+	padding: 0 !important;
+}
+
+.clear.cl1 {
+	height: 24px;
+}
+
+
+.clear.cl2 {
+	height: 25px;
+}
+
+.pt0 {
+	padding-top: 0;
+}
+
+.img_inner {
+	max-width: 100%;
+	 -moz-box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+ -o-box-sizing: border-box;
+ box-sizing: border-box;
+	margin-bottom: 25px;
+ margin-top: 4px;
+ border: 3px solid #e3e83a;
+ position: relative;
+}
+
+.fleft {
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 11px;
+}
+
+.fright {
+	float: right !important;	
+}
+
+.upp {
+	text-transform: uppercase;
+}
+
+.alright {
+	text-align: right;
+}
+.center {
+	text-align: center;
+}
+.wrapper, .extra_wrapper {
+	overflow: hidden;
+}
+.clear {
+	float: none !important;
+	clear: both;
+}
+/*header*/
+
+header {
+	display: block;
+	padding: 13px 0 0;
+	position: relative;
+	z-index: 999;
+}
+
+header a:hover {
+	color: #000;
+}
+
+header h1 {
+	float: none;
+	position: relative;
+	z-index: 999;
+	padding-bottom: 28px;
+
+}
+header h1 a {
+	display: block;
+	overflow: hidden;
+	width: 194px;
+	height: 86px;
+	text-indent: -999px;
+	transition: 0s ease;
+	-o-transition: 0s ease;
+	-webkit-transition: 0s ease;
+}
+
+header h1 a img {
+	display: block;	
+}
+
+.h_phone {
+	float: right;
+	font-size: 14px;
+	padding-top: 65px;
+	color: #bfbebe;
+}
+
+.socials {
+	float: right;
+	padding: 10px 0 11px 25px;
+}
+ 
+.socials a{
+	display: block;
+	background: url(../images/socials.png) 0 0 no-repeat;
+	width: 32px;
+	float: left;
+	height: 32px;
+}
+
+.socials a:hover {
+	box-shadow: 0 3px 3px  #759210;
+}
+
+.socials a+a {
+	background-position: right 0;
+	margin-left: 15px;
+}
+.autor {
+	padding: 11px 0 16px;
+	float: right;
+	font-size: 14px;
+	color: #fff;
+	line-height: 26px;
+}
+
+.autor a {
+	position: relative;
+		margin-right: 30px;
+
+}
+
+.autor a:after {
+	height: 26px;
+	top: -4px;
+	position: absolute;
+	content: '';
+	display: block;
+	width: 1px;
+	background: #fff;
+	right: -18px;
+
+}
+
+</style>
+<style type="text/css">
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_12 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+}
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+  display:inline;
+  float: left;
+  position: relative;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3,
+.push_4, .pull_4,
+.push_5, .pull_5,
+.push_6, .pull_6,
+.push_7, .pull_7,
+.push_8, .pull_8,
+.push_9, .pull_9,
+.push_10, .pull_10,
+.push_11, .pull_11,
+.push_12, .pull_12 {
+  position:relative;
+}
+
+
+/* Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+  margin-left: 0;
+}
+
+.omega {
+  margin-right: 0;
+}
+
+/* Grid >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .grid_1 {
+  width:70px;
+}
+
+.container_12 .grid_2 {
+  width:170px;
+}
+
+.container_12 .grid_3 {
+  width:270px;
+}
+
+.container_12 .grid_4 {
+  width:370px;
+}
+
+.container_12 .grid_5 {
+  width:470px;
+}
+
+.container_12 .grid_6 {
+  width:570px;
+}
+
+.container_12 .grid_7 {
+  width:670px;
+}
+
+.container_12 .grid_8 {
+  width:770px;
+}
+
+.container_12 .grid_9 {
+  width:870px;
+}
+
+.container_12 .grid_10 {
+  width:970px;
+}
+
+.container_12 .grid_11 {
+  width:1070px;
+}
+
+.container_12 .grid_12 {
+  width:1170px;
+}
+
+
+
+
+/* Prefix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .prefix_1 {
+  padding-left:100px;
+}
+
+.container_12 .prefix_2 {
+  padding-left:200px;
+}
+
+.container_12 .prefix_3 {
+  padding-left:300px;
+}
+
+.container_12 .prefix_4 {
+  padding-left:400px;
+}
+
+.container_12 .prefix_5 {
+  padding-left:500px;
+}
+
+.container_12 .prefix_6 {
+  padding-left:600px;
+}
+
+.container_12 .prefix_7 {
+  padding-left:700px;
+}
+
+.container_12 .prefix_8 {
+  padding-left:800px;
+}
+
+.container_12 .prefix_9 {
+  padding-left:900px;
+}
+
+.container_12 .prefix_10 {
+  padding-left:1000px;
+}
+
+.container_12 .prefix_11 {
+  padding-left:1100px;
+}
+
+
+
+/* Suffix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .suffix_1 {
+  padding-right:100px;
+}
+
+.container_12 .suffix_2 {
+  padding-right:200px;
+}
+
+.container_12 .suffix_3 {
+  padding-right:300px;
+}
+
+.container_12 .suffix_4 {
+  padding-right:400px;
+}
+
+.container_12 .suffix_5 {
+  padding-right:500px;
+}
+
+.container_12 .suffix_6 {
+  padding-right:600px;
+}
+
+.container_12 .suffix_7 {
+  padding-right:700px;
+}
+
+.container_12 .suffix_8 {
+  padding-right:800px;
+}
+
+.container_12 .suffix_9 {
+  padding-right:900px;
+}
+
+.container_12 .suffix_10 {
+  padding-right:1000px;
+}
+
+.container_12 .suffix_11 {
+  padding-right:1100px;
+}
+
+
+
+/* Push Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .push_1 {
+  left:100px;
+}
+
+.container_12 .push_2 {
+  left:200px;
+}
+
+.container_12 .push_3 {
+  left:300px;
+}
+
+.container_12 .push_4 {
+  left:400px;
+}
+
+.container_12 .push_5 {
+  left:500px;
+}
+
+.container_12 .push_6 {
+  left:600px;
+}
+
+.container_12 .push_7 {
+  left:700px;
+}
+
+.container_12 .push_8 {
+  left:800px;
+}
+
+.container_12 .push_9 {
+  left:900px;
+}
+
+.container_12 .push_10 {
+  left:1000px;
+}
+
+.container_12 .push_11 {
+  left:1100px;
+}
+
+
+
+/* Pull Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+
+.container_12 .pull_1 {
+  left:-100px;
+}
+
+.container_12 .pull_2 {
+  left:-200px;
+}
+
+.container_12 .pull_3 {
+  left:-300px;
+}
+
+.container_12 .pull_4 {
+  left:-400px;
+}
+
+.container_12 .pull_5 {
+  left:-500px;
+}
+
+.container_12 .pull_6 {
+  left:-600px;
+}
+
+.container_12 .pull_7 {
+  left:-700px;
+}
+
+.container_12 .pull_8 {
+  left:-800px;
+}
+
+.container_12 .pull_9 {
+  left:-900px;
+}
+
+.container_12 .pull_10 {
+  left:-1000px;
+}
+
+.container_12 .pull_11 {
+  left:-1100px;
+}
+
+
+
+
+</style>
+<style type="text/css">
+.menu_block  {
+	position: relative;
+	background: url(../images/menu_bg.png) 0 0 repeat-x #89ab0c;
+	border-bottom: 1px solid #7d9e0c;
+
+}
+
+nav>.sf-menu {
+	text-align: center;
+}
+nav{ position:relative;padding: 0px 0 0 0;}
+.sf-menu ul {position:absolute;top:-999px; display:none;/* left offset of submenus need to match (see below) */}
+.sf-menu li {float:left;position:relative; }
+.sf-menu>li {
+	float: left;
+	position: relative;
+	padding: 15px 0 14px;
+
+}
+
+
+
+.sf-menu>li+li {
+	margin-left:59px;
+}
+
+.sf-menu>li:hover, .sf-menu>li.sfHover, .sf-menu>li.current {
+	border-color: #a92c11;
+}
+
+
+.sf-menu>li>a{
+	font-size: 24px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #000;
+
+	position: relative;
+	font-weight: 300px;
+	line-height: 24px;
+	z-index: 999;
+	position: relative;
+}
+
+
+.sf-menu>li.sfHover>a, .sf-menu>li.current>a, .sf-menu>li:hover>a:hover {
+	color: #fff;
+}
+
+
+
+/*================================>> 2 Level <<========================================*/
+.sf-menu li ul,.sf-menu li.sfHover>ul{
+	top:57px;
+	left: -10px;
+
+	width: 116px;
+	z-index: 999; 
+	padding-top: 1px;
+	padding-bottom: 1px;
+	background: url(../images/sub_bg.png) 0 bottom repeat-x #e0e36a;
+}
+
+.sf-menu li.sfHover>ul:after {
+	display: block;
+	left: 0;
+	right: 0;
+	top: -3px;
+	content: '';
+	position: absolute;
+	height: 3px;
+	background: url(../images/sub_after.png) 0 0 repeat-x;
+}
+.sf-menu li ul li{
+	text-align: left; 
+	float: none !important; 
+	margin-bottom: 4px;
+		padding-left: 14px;
+
+}
+
+.sf-menu li ul li+li {
+	margin-bottom: 6px;
+}
+
+
+.sf-menu li ul li:first-child {
+	padding-top: 0;
+	border: none;
+}
+
+.sf-menu li ul li a.sf-with-ul span{
+	position: absolute;
+	background: url(../images/menu_arrow.png) 0 0 no-repeat;
+	right: -26px;
+	top: 8px;
+	display: block;
+	width: 7px;
+	height: 13px;
+}
+
+.sf-menu li ul li a{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 18px;
+	color: #fff;
+	line-height: 18px;
+	position: relative;
+}
+
+.sf-menu li li a:hover, 
+.sf-menu li.sfHover li.sfHover>a {  
+	color: #000;
+
+}
+
+/*================================>> 3 Level <<========================================*/
+.sf-menu li.sfHover li.sfHover ul{
+left: 119px;
+top: -1px !important;
+}
+
+</style>
+<style type="text/css">
+@charset "utf-8";
+/*
+Template Name: Academic Education
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+File: Navigation CSS
+*/
+
+#topnav{display:block; width:960px; margin:0; padding:0 0 12px 0; background:url("images/round_bot.gif") bottom left no-repeat; text-align:center;}
+#topnav, #topnav a{text-transform:uppercase; color:#06213F; background-color:#F9F9F9;}
+#topnav a:hover, #topnav li.active a{color:#55ABDA; background-color:#F9F9F9;}
+#topnav ul, #topnav li{margin:0; padding:0; list-style:none;}
+#topnav li{display:inline; margin-right:30px;}
+#topnav li.last{margin:0;}
+
+/* ----------------------------------------------Column Navigation------------------------------------- */
+
+#column .subnav{display:block; width:250px; padding:25px; background-color:#F7F7F7; margin-bottom:30px; line-height:normal;}
+#column .subnav h2{margin:0 0 20px 0; padding:0 0 14px 0; background-color:#F7F7F7; border-bottom:1px dotted #666666;}
+#column .subnav ul{margin:0; padding:0; list-style:none;}
+#column .subnav li{margin:0 0 3px 0; padding:0;}
+#column .subnav ul ul, #column .subnav ul ul ul, #column .subnav ul ul ul ul, #column .subnav ul ul ul ul ul{border-top:none; padding-top:0;}
+#column .subnav a{display:block; margin:0; padding:5px 10px 5px 20px; color:#666666; background:url("images/blue_file.gif") no-repeat 10px center #F7F7F7; text-decoration:none; border-bottom:1px dotted #666666;}
+#column .subnav a:hover{color:#55ABDA; background-color:#F7F7F7;}
+#column .subnav ul ul a, #column .subnav ul ul ul a, #column .subnav ul ul ul ul a, #column .subnav ul ul ul ul ul a{background:url("images/black_file.gif") no-repeat #F7F7F7;}
+#column .subnav ul ul a{padding-left:40px; background-position:30px center;}
+#column .subnav ul ul ul a{padding-left:50px; background-position:40px center;}
+#column .subnav ul ul ul ul a{padding-left:60px; background-position:50px center;}
+#column .subnav ul ul ul ul ul a{padding-left:70px; background-position:60px center;}
+
+/* ----------------------------------------------Pagination------------------------------------- */
+
+.pagination{display:block; width:100%; clear:both; text-align:center;}
+.pagination ul{margin:0; padding:0; list-style:none;}
+.pagination li{display:inline;}
+.pagination .next{margin:0;}
+.pagination a{display:inline-block; margin:0 2px 0 0; padding:2px 5px 3px 5px; border:1px solid #D8D9DE;}
+.pagination .current, .pagination .splitter{margin:0 2px 0 0; padding:6px;}
+#container .pagination a:hover, .pagination .current, .pagination .splitter{color:#979797; background-color:#FFFFFF;}
+</style>
+<!--<style type="text/css">
+.white a.btn { behavior:url(../js/PIE.htc); position:relative;}
+
+#form1 a:hover, .socials a:hover  {
+filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+
+}
+
+</style>-->
+
+</head>
+<body>
+<header>
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="h_phone">Need Help? Call Us +1 (800) 123 4567</div>
+      <h1><a href="index.html"><img src="images/logo.png" alt=""></a> </h1>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="menu_block">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="socials"><a href="#"></a><a href="#"></a></div>
+      <!--  <div class="autor"> <a href="#">User Login</a> Social </div>-->
+        <nav>
+          <ul class="sf-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a>
+              
+            </li>
+            <li class="current"><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+			<li><a href="Career.html">Careers</a></li>
+             <li><a href="contact.html">Contacts</a>
+				<li><a href="feeback.html">Feedback</a></li>
+			
+          </ul>
+        </nav>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</header>
+    
+   
+  <<div class="wrapper row3">
+  <div class="rnd">
+  <div id="container" class="clear"*/>
+      <!-- ####################################################################################################### -->
+      <div id="gallery" class="clear">
+	  
+        <h2 class="title" > <font color="#006633">Latest Images From The Nursery</font></h2>
+        <ul>
+          <li><a href="images/demo/1.jpg" rel="prettyPhoto[gallery1]" title=""><img src="images/demo/1.jpg" alt="Title Text" /></a></li>
+          <li><a href="images/demo/2.jpeg" rel="prettyPhoto[gallery1]" title=""><img src="images/demo/2.jpeg" alt="Terrace-Garden" /></a></li>
+          <li><a href="images/demo/3.jpg" rel="prettyPhoto[gallery1]" title=""><img src="images/demo/3.jpg" alt="Landscaping" /></a></li>
+          <li><a href="images/demo/4.jpg" rel="prettyPhoto[gallery1]" title=""><img src="images/demo/4.jpg" alt="Rooftop-Garden " /></a></li>
+          <li class="last"><a href="images/demo/5.jpg" rel="prettyPhoto[gallery1]" title=""><img src="images/demo/5.jpg" alt="Title Text" /></a></li>
+          <li><a href="images/demo/6.jpg" rel="prettyPhoto[gallery1]" title="Image 6"><img src="images/demo/6.jpg" alt="Title Text" /></a></li>
+          <li><a href="images/demo/7.jpg" rel="prettyPhoto[gallery1]" title="Image 7"><img src="images/demo/7.jpg" alt="Title Text" /></a></li>
+          <li><a href="images/demo/8.jpg" rel="prettyPhoto[gallery1]" title="Image 8"><img src="images/demo/8.jpg" alt="Title Text" /></a></li>
+          <li><a href="images/demo/9.jpeg" rel="prettyPhoto[gallery1]" title="Image 9"><img src="images/demo/9.jpeg" alt="Title Text" /></a></li>
+          <li class="last"><a href="images/demo/10.jpg" rel="prettyPhoto[gallery1]" title="Image 10"><img src="images/demo/10.jpg" alt="Title Text" /></a></li>
+          <li><a href="images/demo/11.jpg" rel="prettyPhoto[gallery1]" title="Image 11"><img src="images/demo/11.jpg" alt="Title Text" /></a></li>
+          <li><a href="images/demo/12.jpg" rel="prettyPhoto[gallery1]" title="Image 12"><img src="images/demo/12.jpg" alt="Title Text" /></a></li>
+          <li><a href="images/demo/13.jpg" rel="prettyPhoto[gallery1]" title="Image 13"><img src="images/demo/13.jpg" alt="Title Text" /></a></li>
+          <li><a href="images/demo/14.jpg" rel="prettyPhoto[gallery1]" title="Image 14"><img src="images/demo/14.jpg" alt="Title Text" /></a></li>
+          <li class="last"><a href="images/demo/15.jpg" rel="prettyPhoto[gallery1]" title="Image 15"><img src="images/demo/15.jpg" alt="Title Text" /></a></li>
+		  <!--<li class="last"><a href="images/demo/16.jpg" rel="prettyPhoto[gallery1]" title="Image 15"><img src="images/demo/16.jpg" alt="Title Text" /></a></li>-->
+        </ul>
+      </div>
+      <!-- ####################################################################################################### -->
+      <div class="pagination">
+        <ul>
+          <li class="prev"><a href="#">&laquo; Previous</a></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li class="splitter">&hellip;</li>
+          <li><a href="#">6</a></li>
+          <li class="current">7</li>
+          <li><a href="#">8</a></li>
+          <li><a href="#">9</a></li>
+          <li class="splitter">&hellip;</li>
+          <li><a href="#">14</a></li>
+          <li><a href="#">15</a></li>
+          <li class="next"><a href="#">Next &raquo;</a></li>
+        </ul>
+      </div>
+      <!-- ####################################################################################################### -->
+ 
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
