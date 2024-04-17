@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Garden Truck | Services</title>
+<meta charset="utf-8">
+<link rel="icon" href="images/favicon.ico">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="css/style.css"> 
+ <head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="img/season-change.jpg" type="image/x-icon">
+<title>Healthcare</title>
+
+	    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Pontano+Sans' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,500,700' rel='stylesheet' type='text/css'> 
+	    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+	    <link href='http://fonts.googleapis.com/css?family=Dosis:300,400,500,600' rel='stylesheet' type='text/css'>
+	    
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	    <style type="text/css">
+
+.style1 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	font-style: italic;
+}
+.style2 {
+	font-family: "Courier New", Courier, monospace;
+	font-style: italic;
+}
+.style3 {
+	font-family: "Courier New", Courier, monospace;
+	font-weight: bold;
+	font-style: italic;
+}
+.style4
+{
+  font-family: "Bookman Old Style",Courier, Castellar;
+  font-weight:bold;
+}
+
+        </style>
+		<script language="JavaScript">
+function valid()
+{
+  var Name=document.getElementById("nm").value;
+  var Address=document.getElementById("add").value;
+  var Contact=document.getElementById("con").value;
+  var EmailId=document.getElementById("eid").value;
+  
+    
+	 if(Name=="")
+	 {
+	   alert("Please Enter Name...!");
+	   return false;
+	 }
+	 if(!isNaN(Name))
+	 {
+	   alert("Please Enter Only Alphabets...!");
+	   document.getElementById("nm").value='';
+	   document.getElementById("nm").focus();
+	   return false;
+	   }
+	   
+	 if(Address=="")
+	 {
+	   alert("Please Enter Address...!");
+	   return false;
+	 }
+	if(Contact=="")
+	 {
+	   alert("Please Enter Mobile Number...!");
+	   return false;
+	 }
+	 if(isNaN(Contact))
+	 {
+	   alert("Please Enter Only Numbers...!");
+	   document.getElementById("con").value='';
+	   document.getElementById("con").focus();
+	   return false;
+	 }
+	 if(Contact.length!=10)
+	 {
+	   alert("Please Enter Only 10 Numbers...!");
+	   document.getElementById("con").value='';
+	   document.getElementById("con").focus();
+	   return false;
+	 }
+	   
+	    if(EmailId=="")
+	 {
+	   alert("Please Enter Email_Id...!");
+	   return false;  
+	 }	 
+	   return true;
+	 }  
+	 </script>
+</head>
+
+<body>
+<header>
+  <div class="container_12">
+    <div class="grid_12">
+      <div class="h_phone">Need Help? Call Us +1 (800) 123 4567</div>
+      <h1><a href="index.html"><img src="images/logo.png" alt=""></a> </h1>
+      <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="menu_block">
+    <div class="container_12">
+      <div class="grid_12">
+        <div class="socials"><a href="#"></a><a href="#"></a></div>
+        <div class="autor"> <a href="#">User Login</a> Social </div>
+        <nav>
+          <ul class="sf-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="current"><a href="services.html">Services</a>
+              <ul>
+                <li><a href="#"> Services List</a>
+                  <ul>
+                    <li><a href="#">Seeds</a></li>
+                    <li><a href="#">Traits</a></li>
+                    <li><a href="#">Safety Control</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Overview</a></li>
+                <li><a href="#">FAQS</a></li>
+              </ul>
+            </li>
+            <!-- <li><a href="products.html">Products</a></li> -->
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</header>
+
+<form method="post"  action="Registration.php">
+	<h1 class="style4"><center>Registration </center></h1><br /><br />
+	<div class="container reg">
+	<table align="center" cellpadding="0" cellspacing="0">
+
+<tr>
+<td><h4>Name : </h4></td>
+<td> <input name="nm" type="text" id="nm" size="50" placeholder="Enter your Fullname starting with Surname"  /></td>
+</tr>
+
+<tr>
+<td><h4>Address : </h4></td>
+<td> <input name="add" type="text" id="add" size="50" placeholder="Enter your Address here" /></td>
+</tr>
+
+<tr>
+<td><h4>Contact : </h4></td>
+<td> <input name="con" type="text" id="con" size="50"  placeholder="Enter your Contact Number here" /></td>
+</tr>
+
+<tr>
+<td><h4>Email-Id : </h4></td>
+<td> <input name="eid" type="text" id="eid" size="50" placeholder="Eg: abc@gmail.com" /></td>
+</tr>
+
+<tr>
+<td><h4>User Name : </h4></td>
+<td><input name="unm" type="text" id="unm" size="50" placeholder="Enter User name" /></td>
+</tr>
+      
+<tr>
+<td><h4> Password : </h4></td>
+<td><input name="cpwd" type="password" id="cpwd" size="50" placeholder="Enter Password"/></td>
+</tr>
+
+<tr colspan="2" align="center">
+<td> <input type="Submit"  name="Submit" id="Submit" onClick="return valid()" value="SUBMIT" /></td>
+<td> <input type="Reset" name="res"  value="RESET" /></td>
+</tr>
+
+</table>
+</div>
+</form>
+
+								 
+
+					<aside class="col-md-3 ">
+						
+
+						
+						
+                        <div class="widget widget_tag_cloud" id="tag_cloud-3">
+                        
+                          
+                        </div>
+</aside>
+				</div>
+			</div>
+		</section>
+
+
+		
+
+
+		<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
+		<script type="text/javascript" src="assets/js/wow.min.js"></script>
+		<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+		<script>
+      		new WOW().init();
+		</script>
+		<script type="text/javascript">
+			$(".faq-q").click( function () {
+			  var container = $(this).parents(".faq-c");
+			  var answer = container.find(".faq-a");
+			  var trigger = container.find(".faq-t");
+			  
+			  answer.slideToggle(200);
+			  
+			  if (trigger.hasClass("faq-o")) {
+			    trigger.removeClass("faq-o");
+			  }
+			  else {
+			    trigger.addClass("faq-o");
+			  }
+			});
+		</script>	
+		
+
+</body>
+</html>
